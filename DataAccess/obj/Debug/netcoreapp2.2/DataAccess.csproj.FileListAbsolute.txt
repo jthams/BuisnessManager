@@ -1,0 +1,11 @@
+C:\Users\hamel\source\repos\jthams\BuisnessManager\BuisnessManager\DataAccess\bin\Debug\netcoreapp2.2\DataAccess.deps.json
+C:\Users\hamel\source\repos\jthams\BuisnessManager\BuisnessManager\DataAccess\bin\Debug\netcoreapp2.2\DataAccess.dll
+C:\Users\hamel\source\repos\jthams\BuisnessManager\BuisnessManager\DataAccess\obj\Debug\netcoreapp2.2\DataAccess.csprojAssemblyReference.cache
+C:\Users\hamel\source\repos\jthams\BuisnessManager\BuisnessManager\DataAccess\obj\Debug\netcoreapp2.2\DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\hamel\source\repos\jthams\BuisnessManager\BuisnessManager\DataAccess\obj\Debug\netcoreapp2.2\DataAccess.AssemblyInfoInputs.cache
+C:\Users\hamel\source\repos\jthams\BuisnessManager\BuisnessManager\DataAccess\obj\Debug\netcoreapp2.2\DataAccess.AssemblyInfo.cs
+C:\Users\hamel\source\repos\jthams\BuisnessManager\BuisnessManager\DataAccess\bin\Debug\netcoreapp2.2\DataAccess.pdb
+C:\Users\hamel\source\repos\jthams\BuisnessManager\BuisnessManager\DataAccess\obj\Debug\netcoreapp2.2\DataAccess.dll
+C:\Users\hamel\source\repos\jthams\BuisnessManager\BuisnessManager\DataAccess\obj\Debug\netcoreapp2.2\DataAccess.pdb
+C:\Users\hamel\source\repos\jthams\BuisnessManager\BuisnessManager\DataAccess\bin\Debug\netcoreapp2.2\DataAccess.runtimeconfig.json
+C:\Users\hamel\source\repos\jthams\BuisnessManager\BuisnessManager\DataAccess\bin\Debug\netcoreapp2.2\DataAccess.runtimeconfig.dev.json
