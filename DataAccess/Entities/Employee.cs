@@ -16,9 +16,10 @@ namespace DataAccess.Entities
         public string City { get; set; }
         public int ZipCode { get; set; }
         public string Email { get; set; }
-        public string Type { get; set; }
         public decimal Wage { get; set; }
         public int? Salary { get; set; }
+        public ICollection<Workday> Availability { get; set; }
+        public Organization Employer { get; set; }
         public ICollection<Invoice> PayStubs { get; set; }
     }
 }

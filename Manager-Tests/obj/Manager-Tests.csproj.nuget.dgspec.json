@@ -1,26 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\hamel\\source\\repos\\jthams\\BuisnessManager\\Manager-Tests\\Manager-Tests.csproj": {}
+    "C:\\Users\\hamel\\source\\Repos\\jthams\\BuisnessManager\\Manager-Tests\\Manager-Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\hamel\\source\\repos\\jthams\\BuisnessManager\\Manager-Tests\\Manager-Tests.csproj": {
+    "C:\\Users\\hamel\\source\\Repos\\jthams\\BuisnessManager\\Manager-Tests\\Manager-Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hamel\\source\\repos\\jthams\\BuisnessManager\\Manager-Tests\\Manager-Tests.csproj",
+        "projectUniqueName": "C:\\Users\\hamel\\source\\Repos\\jthams\\BuisnessManager\\Manager-Tests\\Manager-Tests.csproj",
         "projectName": "Manager-Tests",
-        "projectPath": "C:\\Users\\hamel\\source\\repos\\jthams\\BuisnessManager\\Manager-Tests\\Manager-Tests.csproj",
+        "projectPath": "C:\\Users\\hamel\\source\\Repos\\jthams\\BuisnessManager\\Manager-Tests\\Manager-Tests.csproj",
         "packagesPath": "C:\\Users\\hamel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hamel\\source\\repos\\jthams\\BuisnessManager\\Manager-Tests\\obj\\",
+        "outputPath": "C:\\Users\\hamel\\source\\Repos\\jthams\\BuisnessManager\\Manager-Tests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\ProgramData\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
           "C:\\Users\\hamel\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.2"

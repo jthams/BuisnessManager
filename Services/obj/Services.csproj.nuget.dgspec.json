@@ -1,26 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\hamel\\source\\repos\\jthams\\BuisnessManager\\Services\\Services.csproj": {}
+    "C:\\Users\\hamel\\source\\Repos\\jthams\\BuisnessManager\\Services\\Services.csproj": {}
   },
   "projects": {
-    "C:\\Users\\hamel\\source\\repos\\jthams\\BuisnessManager\\Services\\Services.csproj": {
+    "C:\\Users\\hamel\\source\\Repos\\jthams\\BuisnessManager\\DataAccess\\DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hamel\\source\\repos\\jthams\\BuisnessManager\\Services\\Services.csproj",
-        "projectName": "Services",
-        "projectPath": "C:\\Users\\hamel\\source\\repos\\jthams\\BuisnessManager\\Services\\Services.csproj",
+        "projectUniqueName": "C:\\Users\\hamel\\source\\Repos\\jthams\\BuisnessManager\\DataAccess\\DataAccess.csproj",
+        "projectName": "DataAccess",
+        "projectPath": "C:\\Users\\hamel\\source\\Repos\\jthams\\BuisnessManager\\DataAccess\\DataAccess.csproj",
         "packagesPath": "C:\\Users\\hamel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hamel\\source\\repos\\jthams\\BuisnessManager\\Services\\obj\\",
+        "outputPath": "C:\\Users\\hamel\\source\\Repos\\jthams\\BuisnessManager\\DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\ProgramData\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
           "C:\\Users\\hamel\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.2"
@@ -43,11 +41,95 @@
       "frameworks": {
         "netcoreapp2.2": {
           "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[2.2.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "target": "Package",
+              "version": "[2.2.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[2.2.4, )"
+            },
             "Microsoft.NETCore.App": {
               "suppressParent": "All",
               "target": "Package",
               "version": "[2.2.0, )",
               "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\Users\\hamel\\source\\Repos\\jthams\\BuisnessManager\\Services\\Services.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\hamel\\source\\Repos\\jthams\\BuisnessManager\\Services\\Services.csproj",
+        "projectName": "Services",
+        "projectPath": "C:\\Users\\hamel\\source\\Repos\\jthams\\BuisnessManager\\Services\\Services.csproj",
+        "packagesPath": "C:\\Users\\hamel\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\hamel\\source\\Repos\\jthams\\BuisnessManager\\Services\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\hamel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "C:\\Users\\hamel\\source\\Repos\\jthams\\BuisnessManager\\DataAccess\\DataAccess.csproj": {
+                "projectPath": "C:\\Users\\hamel\\source\\Repos\\jthams\\BuisnessManager\\DataAccess\\DataAccess.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.AspNetCore": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Identity": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Sendgrid": {
+              "target": "Package",
+              "version": "[9.11.0, )"
             }
           },
           "imports": [

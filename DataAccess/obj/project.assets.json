@@ -4481,26 +4481,23 @@
   },
   "packageFolders": {
     "C:\\Users\\hamel\\.nuget\\packages\\": {},
-    "C:\\ProgramData\\Xamarin\\NuGet\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\hamel\\source\\repos\\jthams\\BuisnessManager\\DataAccess\\DataAccess.csproj",
+      "projectUniqueName": "C:\\Users\\hamel\\Source\\Repos\\jthams\\BuisnessManager\\DataAccess\\DataAccess.csproj",
       "projectName": "DataAccess",
-      "projectPath": "C:\\Users\\hamel\\source\\repos\\jthams\\BuisnessManager\\DataAccess\\DataAccess.csproj",
+      "projectPath": "C:\\Users\\hamel\\Source\\Repos\\jthams\\BuisnessManager\\DataAccess\\DataAccess.csproj",
       "packagesPath": "C:\\Users\\hamel\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\hamel\\source\\repos\\jthams\\BuisnessManager\\DataAccess\\obj\\",
+      "outputPath": "C:\\Users\\hamel\\Source\\Repos\\jthams\\BuisnessManager\\DataAccess\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\ProgramData\\Xamarin\\NuGet\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
         "C:\\Users\\hamel\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.2"

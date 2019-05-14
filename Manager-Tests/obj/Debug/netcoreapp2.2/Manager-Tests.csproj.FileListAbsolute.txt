@@ -12,3 +12,17 @@ C:\Users\hamel\source\repos\jthams\BuisnessManager\BuisnessManager\Manager-Tests
 C:\Users\hamel\source\repos\jthams\BuisnessManager\BuisnessManager\Manager-Tests\obj\Debug\netcoreapp2.2\Manager-Tests.AssemblyInfo.cs
 C:\Users\hamel\source\repos\jthams\BuisnessManager\BuisnessManager\Manager-Tests\obj\Debug\netcoreapp2.2\Manager-Tests.dll
 C:\Users\hamel\source\repos\jthams\BuisnessManager\BuisnessManager\Manager-Tests\obj\Debug\netcoreapp2.2\Manager-Tests.pdb
+C:\Users\hamel\Source\Repos\jthams\BuisnessManager\Manager-Tests\bin\Debug\netcoreapp2.2\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Users\hamel\Source\Repos\jthams\BuisnessManager\Manager-Tests\bin\Debug\netcoreapp2.2\xunit.runner.reporters.netcoreapp10.dll
+C:\Users\hamel\Source\Repos\jthams\BuisnessManager\Manager-Tests\bin\Debug\netcoreapp2.2\xunit.runner.utility.netcoreapp10.dll
+C:\Users\hamel\Source\Repos\jthams\BuisnessManager\Manager-Tests\bin\Debug\netcoreapp2.2\Manager-Tests.deps.json
+C:\Users\hamel\Source\Repos\jthams\BuisnessManager\Manager-Tests\bin\Debug\netcoreapp2.2\Manager-Tests.runtimeconfig.json
+C:\Users\hamel\Source\Repos\jthams\BuisnessManager\Manager-Tests\bin\Debug\netcoreapp2.2\Manager-Tests.runtimeconfig.dev.json
+C:\Users\hamel\Source\Repos\jthams\BuisnessManager\Manager-Tests\bin\Debug\netcoreapp2.2\Manager-Tests.dll
+C:\Users\hamel\Source\Repos\jthams\BuisnessManager\Manager-Tests\bin\Debug\netcoreapp2.2\Manager-Tests.pdb
+C:\Users\hamel\Source\Repos\jthams\BuisnessManager\Manager-Tests\obj\Debug\netcoreapp2.2\Manager-Tests.csprojAssemblyReference.cache
+C:\Users\hamel\Source\Repos\jthams\BuisnessManager\Manager-Tests\obj\Debug\netcoreapp2.2\Manager-Tests.csproj.CoreCompileInputs.cache
+C:\Users\hamel\Source\Repos\jthams\BuisnessManager\Manager-Tests\obj\Debug\netcoreapp2.2\Manager-Tests.AssemblyInfoInputs.cache
+C:\Users\hamel\Source\Repos\jthams\BuisnessManager\Manager-Tests\obj\Debug\netcoreapp2.2\Manager-Tests.AssemblyInfo.cs
+C:\Users\hamel\Source\Repos\jthams\BuisnessManager\Manager-Tests\obj\Debug\netcoreapp2.2\Manager-Tests.dll
+C:\Users\hamel\Source\Repos\jthams\BuisnessManager\Manager-Tests\obj\Debug\netcoreapp2.2\Manager-Tests.pdb

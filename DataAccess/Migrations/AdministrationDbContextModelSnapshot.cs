@@ -19,29 +19,6 @@ namespace DataAccess.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("DataAccess.Concrete.Personnel", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<string>("City");
-
-                    b.Property<string>("Email");
-
-                    b.Property<string>("FirstName");
-
-                    b.Property<string>("LastName");
-
-                    b.Property<string>("StreetAddress");
-
-                    b.Property<int>("ZipCode");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Personnel");
-                });
-
             modelBuilder.Entity("DataAccess.Entities.Client", b =>
                 {
                     b.Property<int>("Id")
@@ -56,11 +33,15 @@ namespace DataAccess.Migrations
 
                     b.Property<string>("LastName");
 
+                    b.Property<int?>("OrganizationId");
+
                     b.Property<string>("StreetAddress");
 
                     b.Property<int>("ZipCode");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("OrganizationId");
 
                     b.ToTable("Clients");
                 });
@@ -75,6 +56,8 @@ namespace DataAccess.Migrations
 
                     b.Property<string>("Email");
 
+                    b.Property<int?>("EmployerId");
+
                     b.Property<string>("FirstName");
 
                     b.Property<string>("LastName");
@@ -85,13 +68,13 @@ namespace DataAccess.Migrations
 
                     b.Property<string>("StreetAddress");
 
-                    b.Property<string>("Type");
-
                     b.Property<decimal>("Wage");
 
                     b.Property<int>("ZipCode");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("EmployerId");
 
                     b.HasIndex("ProjectId");
 
@@ -118,8 +101,6 @@ namespace DataAccess.Migrations
 
                     b.Property<int?>("PaymentId");
 
-                    b.Property<int?>("PersonnelId");
-
                     b.Property<int?>("ProjectId");
 
                     b.Property<decimal>("Total");
@@ -132,11 +113,22 @@ namespace DataAccess.Migrations
 
                     b.HasIndex("PaymentId");
 
-                    b.HasIndex("PersonnelId");
-
                     b.HasIndex("ProjectId");
 
                     b.ToTable("Invoices");
+                });
+
+            modelBuilder.Entity("DataAccess.Entities.Organization", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Name");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Organizations");
                 });
 
             modelBuilder.Entity("DataAccess.Entities.PaymentData", b =>
@@ -174,11 +166,15 @@ namespace DataAccess.Migrations
 
                     b.Property<string>("Name");
 
+                    b.Property<int?>("OrganizationId");
+
                     b.Property<DateTime>("StartDate");
 
                     b.HasKey("Id");
 
                     b.HasIndex("ClientId");
+
+                    b.HasIndex("OrganizationId");
 
                     b.ToTable("Projects");
                 });
@@ -199,11 +195,47 @@ namespace DataAccess.Migrations
 
                     b.HasIndex("InvoiceId");
 
-                    b.ToTable("Resource");
+                    b.ToTable("Resources");
+                });
+
+            modelBuilder.Entity("DataAccess.Entities.Workday", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Day");
+
+                    b.Property<int?>("EmployeeId");
+
+                    b.Property<int>("EndTime");
+
+                    b.Property<int?>("OrganizationId");
+
+                    b.Property<int>("StartTime");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("EmployeeId");
+
+                    b.HasIndex("OrganizationId");
+
+                    b.ToTable("Workdays");
+                });
+
+            modelBuilder.Entity("DataAccess.Entities.Client", b =>
+                {
+                    b.HasOne("DataAccess.Entities.Organization")
+                        .WithMany("Clients")
+                        .HasForeignKey("OrganizationId");
                 });
 
             modelBuilder.Entity("DataAccess.Entities.Employee", b =>
                 {
+                    b.HasOne("DataAccess.Entities.Organization", "Employer")
+                        .WithMany("Employees")
+                        .HasForeignKey("EmployerId");
+
                     b.HasOne("DataAccess.Entities.Project")
                         .WithMany("Employees")
                         .HasForeignKey("ProjectId");
@@ -223,10 +255,6 @@ namespace DataAccess.Migrations
                         .WithMany()
                         .HasForeignKey("PaymentId");
 
-                    b.HasOne("DataAccess.Concrete.Personnel", "Personnel")
-                        .WithMany()
-                        .HasForeignKey("PersonnelId");
-
                     b.HasOne("DataAccess.Entities.Project")
                         .WithMany("Invoices")
                         .HasForeignKey("ProjectId");
@@ -244,6 +272,10 @@ namespace DataAccess.Migrations
                     b.HasOne("DataAccess.Entities.Client")
                         .WithMany("Projects")
                         .HasForeignKey("ClientId");
+
+                    b.HasOne("DataAccess.Entities.Organization")
+                        .WithMany("Projects")
+                        .HasForeignKey("OrganizationId");
                 });
 
             modelBuilder.Entity("DataAccess.Entities.Resource", b =>
@@ -251,6 +283,17 @@ namespace DataAccess.Migrations
                     b.HasOne("DataAccess.Entities.Invoice")
                         .WithMany("Items")
                         .HasForeignKey("InvoiceId");
+                });
+
+            modelBuilder.Entity("DataAccess.Entities.Workday", b =>
+                {
+                    b.HasOne("DataAccess.Entities.Employee")
+                        .WithMany("Availability")
+                        .HasForeignKey("EmployeeId");
+
+                    b.HasOne("DataAccess.Entities.Organization")
+                        .WithMany("HoursOfOperation")
+                        .HasForeignKey("OrganizationId");
                 });
 #pragma warning restore 612, 618
         }
