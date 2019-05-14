@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.Extensions.Options;
 using Services.Resolvers;
 
-namespace Services
+namespace Services.Email
 {
     public class EmailSender : IEmailSender
     {

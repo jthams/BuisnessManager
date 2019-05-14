@@ -16,7 +16,7 @@ using Microsoft.Extensions.DependencyInjection;
 using DataAccess.Contexts;
 using DataAccess.Concrete;
 using DataAccess.Abstract;
-using Services;
+using Services.Email;
 using Services.Resolvers;
 
 namespace WebUI

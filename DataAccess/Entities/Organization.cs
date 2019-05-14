@@ -8,6 +8,7 @@ namespace DataAccess.Entities
     {
         public int Id { get; set; }
         public string Name { get; set; }
+        public string Owner { get; set; }
         public ICollection<Client> Clients { get; set; }
         public ICollection<Employee> Employees { get; set; }
         public ICollection<Workday> HoursOfOperation  { get; set; }
